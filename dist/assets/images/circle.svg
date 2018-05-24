@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551.024 556.984">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #ededed;
+      }
+
+      .cls-1 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_10" data-name="Group 10" transform="translate(1439.623 25.746) rotate(138)">
+    <g id="outline" class="cls-1" transform="translate(839.168 396)">
+      <circle class="cls-3" cx="195.084" cy="195.084" r="195.084"/>
+      <circle class="cls-4" cx="195.084" cy="195.084" r="194.084"/>
+    </g>
+    <path id="thicker_path" data-name="thicker path" class="cls-2" d="M106,.5C213.234.5,300.164,87.43,300.164,194.664" transform="translate(928.252 396.42)"/>
+    <path id="thicker_path-2" data-name="thicker path" class="cls-2" d="M0,0C107.234,0,194.164,86.93,194.164,194.164" transform="translate(1033.952 785.093) rotate(180)"/>
+  </g>
+</svg>

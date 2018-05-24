@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.951 49.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 16px;
+        font-family: OpenSans, Open Sans;
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </defs>
+  <g id="Group_26" data-name="Group 26" transform="translate(-70.001 -895.001)">
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="24.975" cy="24.975" r="24.975" transform="translate(70.001 895.001)"/>
+    <text id="CV" class="cls-1" transform="translate(85 926)"><tspan x="0" y="0">CV</tspan></text>
+  </g>
+</svg>

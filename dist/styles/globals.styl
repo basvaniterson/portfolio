@@ -1,0 +1,214 @@
+primary-color = #000000;
+headings-font = serif
+body-font = sans-serif
+
+html, body
+  height 100% 
+  margin 0px
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  font-family body-font
+  
+h1, h2, h3, h4, h5, h6
+  font-family headings-font
+  font-weight 400
+  line-height 1.1
+  color primary-color
+  margin-bottom 1.1rem
+  
+h1
+  font-size 40px
+  color primary-color
+
+h2
+  font-size 24px
+
+h3
+  font-size 16px
+
+p, address
+  line-height 25px
+  margin-bottom 20px
+
+img
+  max-width 100%
+  height auto
+
+address
+  font-style normal
+  
+a
+  text-decoration none
+  -webkit-transition all 0.4s 
+  -moz-transition all 0.4s 
+  -ms-transition all 0.4s 
+  -o-transition all 0.4s 
+  transition all 0.4s 
+  
+  &:hover, &:focus, &:active
+    color primary-color
+    text-decoration underline
+
+.list-inline
+  li
+    display inline-block
+    padding-left 10px
+    padding-right 10px
+
+.list-unstyled
+  list-style none
+  
+  li
+    &:before
+      display none
+
+  .col
+    flex 3 3 auto
+    width 0
+    padding-left 30px
+    padding-right 30px
+  
+  aside
+    flex 1 1 auto
+    width 0
+    padding-left 30px
+    padding-right 30px
+
+    @media (max-width 991px)
+      flex 2 2 auto
+
+  @media (max-width 1024px)
+    flex-wrap wrap
+
+    .col
+      flex 1 1 50%
+      margin-bottom 40px
+
+      &:last-of-type
+        margin-bottom 0
+
+  @media (max-width 767px)
+
+    .col
+      flex 1 1 100%
+  
+header
+  position relative
+
+.btn
+  border-radius 0
+  font-weight 400
+  letter-spacing 0.1em
+  font-size 14px
+  text-transform uppercase
+  display inline-block
+  padding 12px 20px
+  line-height 17px
+  height 41px
+  text-decoration none
+  border 0
+  cursor pointer
+  text-align center
+  min-width 120px
+
+  &.btn-default
+    background black
+    color #fff
+    transition all 0.4s
+
+    &:hover, &:focus, &:active
+      background primary-color
+  
+  &.btn-primary
+    background primary-color
+    color #fff
+    transition all 0.4s
+
+    &:hover, &:focus, &:active
+      background black
+  
+
+.cols
+  columns 2 auto
+
+.owl-stage-outer, .owl-stage, .owl-item
+  height 100%
+
+form
+  margin-top 30px
+
+  .form-group
+    display flex
+    margin-bottom 20px
+    align-items center
+
+    .two-cols
+      flex 1 1 100%
+      display flex
+
+      label 
+        margin-right 10px
+        flex 1 1 40px
+        align-self center
+
+      .col
+        display flex
+        flex 1 1 auto
+        padding-left 0
+        padding-right 20px
+
+        &:last-of-type
+          padding-right 0
+
+    @media (max-width 400px)
+        display block
+        margin-bottom 12px
+
+  label 
+    flex 1 1 220px
+    width 0
+    line-height 34px
+    align-self flex-start
+    
+    @media (max-width 400px)
+      display block
+      width 100%
+
+  .form-control
+    height 34px
+    flex 1 1 100%
+    padding-left 10px
+    padding-right 10px
+    font-size 14px
+    width 0
+    border 1px solid #d2d2d2
+    background #fff
+    border-radius 0
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+
+    @media (max-width 400px)
+      display block
+      width 100%
+
+  select.form-control
+    background url(https://png.icons8.com/down/ios11/30/000000) calc(100% - 10px) center / 20px no-repeat
+    cursor pointer
+
+    option["disabled"]
+      color #ccc
+
+  textarea.form-control
+    height auto
+
+  button 
+    margin-top 10px

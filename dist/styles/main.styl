@@ -1,0 +1,1005 @@
+@import "globals";
+@import "fonts";
+
+body, html 
+  margin 0
+  position absolute
+  z-index 999
+
+  .left-background
+    position fixed
+    left 0px
+    top 0px
+
+    img
+      width auto
+      height 100vh
+      z-index 666
+  
+  .right-background
+    position fixed
+    right 0px
+    top 0px
+    bottom 0px
+
+    img
+      width auto
+      height 100vh
+      z-index 666
+  
+  @media (max-width 748px)
+   .right-background 
+      img
+        display none
+
+header
+  width 100%
+  height 100vh
+  
+  .container
+    display flex
+    flex-wrap wrap
+    justify-content flex-start
+    align-items center
+    margin-top 60px
+
+    .brand
+      justify-content flex-start
+      display flex
+      left 60px
+      margin-left 60px
+
+      img 
+        height 40px
+        width 40px
+    .name
+      display block
+      text-transform uppercase
+      padding-left 20px
+      padding-right 30px
+      font-size 12px
+      margin 0px
+      color #999999
+      padding-right 10px
+      padding-bottom 0px
+    .txt-rotate
+      display block
+      color #000
+      text-transform uppercase
+      font-size 12px
+      margin-top 0px
+      letter-spacing 1px
+      padding-left 20px
+      
+    nav
+      display flex
+      flex-wrap wrap
+      right 80px
+      position absolute
+      z-index 999
+      
+      ul
+        margin 0px
+        li
+          display inline-block
+          margin-left 30px
+
+          a  
+            color #000
+            text-transform uppercase
+            font-size 12px
+            letter-spacing 1px
+            font-family "Open Sans"
+            &:hover
+              color #999999
+              text-decoration none
+    
+
+  @media (max-width 650px)
+    .container
+      nav
+        ul
+          padding-top 7px
+          li
+            display block
+            text-align right
+            padding-bottom 8px
+  
+  @media (max-width 550px)
+    .container
+      margin-top 30px
+      nav
+       right 40px 
+      .brand
+        margin-left 40px
+
+  .overlay
+    top 0
+    right 0
+    bottom 0
+    left 0
+    position absolute
+    display flex
+    align-items center
+    width 900px
+    z-index 666
+    margin auto
+
+    .circle
+      z-index 1
+      position absolute
+      display flex
+      flex-wrap wrap
+      align-items flex-start
+      justify-content flex-start
+
+      img 
+        width 390px
+        height 390px
+        z-index 1
+
+    .content
+      margin-right auto
+      margin-left auto
+      width 550px
+      z-index 999
+
+
+      h1 
+        text-transform uppercase
+        font-family "Open Sans"
+        font-weight 600
+        font-size 36px
+
+      span
+        color #000000
+        display inline-block
+        font-size 18px 
+
+      p
+        color #999999
+        font-size 18px
+        display inline
+        margin-right 5px
+        margin-left 5px
+  
+  @media (max-width 1240px)
+    .overlay
+      justify-content center
+      .circle 
+        display none
+      .content
+        max-width 
+  
+  @media (max-width 900px)
+    .overlay
+      width auto
+      margin-left 60px
+      margin-right 60px
+      justify-content center
+  
+  @media (max-width 750px)
+    .overlay
+      .content
+        max-width 500px
+      
+
+  @media (max-width 550px)
+    .overlay
+      margin-left 0px
+
+      .content
+        max-width 300px
+        position absolute
+        left 40px
+ 
+  @media (max-width 400px)
+    .overlay
+      .content
+        max-width 250px
+        position absolute
+        left 40px
+
+        
+        h1 
+          font-weight 600
+          font-size 25px
+
+        span
+          font-size 16px 
+
+        p
+          font-size 16px
+        
+  .socials-nav
+    right 60px
+    position absolute
+    margin-top 40px
+    flex-wrap wrap
+    align-content center
+    display flex
+    top 60px
+    justify-content flex-end
+    
+    ul
+      list-style none
+      margin 0px
+      
+      li
+        padding-bottom 20px
+        justify-content center
+        display flex
+        
+        p
+          transform rotate(90deg) translate3d(1px,-7px,0); 
+          transform-origin 50% 0
+          font-size 12px
+          letter-spacing 1px
+          text-transform uppercase
+          color #999999
+
+        a
+          .linkdin
+            width auto
+            height 17px
+          
+          .instagram
+            width auto
+            height 17px
+          
+          .facebook
+            width 17px
+            height 17px
+  
+  @media (max-width 550px)
+    .socials-nav
+      right 30px
+
+  .projects-nav
+    right 60px
+    position absolute
+    margin-top 40px
+    flex-wrap wrap
+    align-content center
+    display flex
+    bottom 60px
+    justify-content flex-end
+
+    ul
+      list-style none
+      margin 0px
+
+      li
+        padding-bottom 20px
+        justify-content center
+        display flex
+
+        p
+          transform rotate(90deg) translate3d(1px,-7px,0); 
+          transform-origin 50% 0
+          font-size 12px
+          letter-spacing 1px
+          text-transform uppercase
+          color #999999
+        
+        @keyframes float
+          0% 
+            box-shadow 0 5px 15px 0px rgba(0,0,0,0.6)
+            transform translatey(0px)
+          
+          50% 
+            box-shadow 0 25px 15px 0px rgba(0,0,0,0.2)
+            transform translatey(-5px)
+          
+          100% 
+            box-shadow 0 5px 15px 0px rgba(0,0,0,0.6)
+            transform translatey(0px)
+          
+
+        button,#scroll_down,.scroll_down
+          background none
+          border none
+          cursor pointer
+          outline none
+          margin-bottom 60px
+
+          img
+            height 45px
+            border-radius 50%
+            box-shadow 0 5px 10px 0px rgba(0,0,0,0.6)
+            width 45px
+            transform translatey(0px)
+            animation float 1.8s ease-in-out infinite
+  
+  @media (max-width 550px)
+    .projects-nav
+      right 30px
+      bottom 0px
+
+.projects
+  width 100vw
+  height 100vh
+  display flex
+
+
+  .container
+    margin-left auto
+    margin-right auto
+    width 1400px
+    display flex
+    align-items center
+    flex-wrap wrap
+
+    .project
+      padding-top 0px
+      margin-left 60px
+      margin-right 60px
+      display flex
+     
+      .project-image
+        flex 1 1 80%
+        z-index 999
+        
+        img
+          width 100%
+          height auto
+      
+      .project-text
+        flex 1 1 50%
+        padding-left 30px
+        display flex
+        flex-wrap wrap
+        align-items center
+
+        .lower-text
+          position relative
+          bottom 0px
+
+          span
+            font-family "Open sans"
+            color #999999
+            font-size 20px
+
+          h2 
+            font-size 30px
+            font-family "Open sans"
+            margin 0px
+            color #000
+          
+          p
+            margin-top 10px
+            color #999999
+            margin-bottom 0px
+            font-size 16px
+
+          .button
+            border-radius 50px
+            background-color #000
+            padding 8px
+            display block
+            max-width 120px
+            text-align center
+            text-decoration none
+            margin-top 20px
+            align-self flex-end
+            flex-wrap wrap
+            &:hover
+              background-color #999999
+            
+            a
+              color #fff
+              text-decoration none
+              text-align center
+  
+  @media (max-width 900px)
+    .container
+      .project
+        display block
+        z-index 999
+        .project-text
+          padding-left 0px
+          padding-top 30px
+  
+  @media (max-width 550px)
+    .container
+      .project
+        margin-right 40px
+        margin-left 40px
+
+.contact
+  width 100vw
+  height 100vh
+  display flex
+
+
+  .container
+    margin-left auto
+    margin-right auto
+    width 1400px
+    align-items center
+    flex-wrap wrap
+    display flex
+
+
+   .contact-text
+      display flex
+      align-items center
+      flex-wrap wrap
+      
+      .info-text
+        flex 1 1 50%
+        z-index 999
+        padding-left 60px
+
+        h2
+          font-family 'Open sans'
+          font-size 25px
+          margin-bottom 0px
+          color #999999
+          display inline-block
+          padding-right 10px
+        
+        span
+          font-family 'Open sans'
+          font-size 25px
+          margin-bottom 0px
+          display inline-block
+          color #000000
+          
+        .info
+          h2 
+            color #000000
+            font-family 'Open sans'
+            margin-bottom 0px
+            font-size 20px
+            margin-top 10px
+            
+          a
+            padding-right 10px
+            font-size 18px
+            color #999999
+            text-decoration none
+            font-family 'Open sans'
+            display flex
+            flex-wrap wrap
+            align-items center
+            &:hover
+              color #000000
+
+            .button
+              margin-left 20px
+              img
+                width 40px
+                height auto
+                &:hover
+                  box-shadow 0 5px 10px 0px rgba(0,0,0,0.6)
+                  border-radius 50%
+
+
+      .plain-text
+        flex 1 1 50%
+        padding-left 60px
+        z-index 999
+        padding-right 60px
+
+        span
+          color #000000
+          font-size 18px
+
+        p
+          color #999999
+          display inline
+          margin-right 5px
+          margin-left 5px
+          font-size 18px
+    
+    @media (max-width 826px)
+      .contact-text
+        .plain-text
+          padding-left 60px
+          padding-top 60px
+    
+    @media (max-width 550px)
+      .contact-text
+        .info-text
+          padding-left 40px
+          padding-right 40px
+          h2
+            font-size 18px
+            padding-right 10px
+
+          span
+            font-size 18px
+
+          .info
+            h2 
+              font-size 18px
+              margin-top 20px
+
+            a
+              padding-right 10px
+              font-size 14px
+              color #999999
+              text-decoration none
+              font-family 'Open sans'
+              display flex
+              flex-wrap wrap
+              align-items center
+              &:hover
+                color #000000
+
+              .button
+                margin-left 5px
+                img
+                  width 14px
+                  height auto
+                  &:hover
+                    box-shadow 0 5px 10px 0px rgba(0,0,0,0.6)
+                    border-radius 50%
+
+        .plain-text
+          flex 1 1 50%
+          padding-left 60px
+          z-index 999
+          padding-right 60px
+
+          span
+            color #000000
+            font-size 18px
+
+          p
+            color #999999
+            display inline
+            margin-right 5px
+            margin-left 5px
+            font-size 18px
+        
+        .plain-text
+          padding-left 40px
+          padding-right 40px
+          padding-top 40px
+footer
+  bottom 60px
+  .footer-text
+    display flex
+    margin-bottom 60px
+    .left-text
+      left 60px
+      position absolute
+      p
+        font-size 14px
+        margin 0px 
+        font-family 'Open sans'
+      
+    .right-text
+      display flex
+      flex-wrap wrap
+      right 60px
+      position absolute
+      margin-top 0px
+      p
+        font-size 14px
+        display inline-block
+        font-family 'Open sans'
+        margin 0px
+  
+  @media (max-width 650px)
+    .footer-text
+      text-align center
+      display block
+      .left-text
+        position relative
+        left 0
+        p
+          text-align center
+          display block
+      
+      .right-text
+        position relative
+        right 0
+        display block
+        p
+          text-align center
+          display block
+  
+  @media (max-width 550px)
+    .footer-text
+      margin-bottom 40px
+  
+//projects-page
+.page-header
+  width 100%
+  height auto
+  
+  .projects-page
+    margin-left auto
+    margin-right auto
+    width 1400px
+    display flex
+    margin-top 240px
+
+    .col
+      flex 1 1 50%
+      .subject-text
+        margin-right 120px
+        margin-left 60px
+        margin-top 60px
+        margin-bottom 60px
+
+        h1 
+          font-family 'Open sans'
+          margin-top 0px
+          text-transform uppercase
+        
+        p 
+          color #999999
+          font-family 'Open sans'
+        
+      .subject-info
+        margin 60px
+
+        span 
+          color #000000
+          font-family 'Open sans'
+          display inline-block
+        
+        p 
+          color #999999
+      
+        span 
+
+.project-content
+  margin-left auto
+  margin-right auto
+  width 1400px
+  padding-left 60px
+  padding-right 60px
+  
+  video
+    width 100%
+    height 100%
+    margin-bottom 30px
+
+@media (max-width 1650px)
+  .page-header
+    
+    .projects-page
+      width 1200px
+      .col
+        .subject-text
+          margin-right 0px
+
+    .project-content
+      width 1150px
+
+@media (max-width 1200px)
+  .page-header
+    .projects-page
+      width 1000px
+    .project-content
+      width 1000px
+
+@media (max-width 1000px)
+  .page-header
+    .projects-page
+      width 800px
+    .project-content
+      width 800px
+
+@media (max-width 800px)
+  .page-header
+    .projects-page
+      display block
+      width 700px
+
+    .project-content
+      width 700px
+
+@media (max-width 550px)
+  .page-header
+    .projects-page
+      display block
+      width 100%
+      .col
+        .subject-text
+          margin 40px
+        .subject-info
+          margin 40px
+
+    .project-content
+      width 100%
+      padding-left 40px
+      padding-right 40px
+
+/*about me page*/
+  .page-header
+    width 100%
+    height auto
+
+  .skills
+    margin-left auto
+    margin-right auto
+    width 800px
+    display flex
+    margin-top 70px
+    margin-bottom 70px
+
+    .col
+      flex 1 1 50%
+      .skills-content
+        .skills-text
+          flex-wrap wrap
+          align-content center
+          
+          h1 
+            font-family 'Open sans'
+            text-transform uppercase
+            font-size 30px
+            font-weight 600
+            margin-top 10px
+          p 
+            font-family 'Open sans'
+            color #000
+            margin 0px
+            font-size 14px
+            margin-right 5px
+            span
+              color #999999
+              padding-left 5px
+            
+      .about-profile 
+        text-align right
+        img 
+          width 100%
+          height auto
+          margin-top -80px
+
+  .about
+    margin-left auto
+    margin-right auto
+    width 1200px
+    display flex
+    margin-bottom 50px
+
+    .col
+      flex 1 1 50%
+
+      .about-text
+        padding-left 30px
+        padding-right 30px
+
+        h1 
+          font-family 'Open sans'
+          text-transform uppercase
+          font-size 30px
+          font-weight 600
+          margin-top 0px
+        
+        span
+          color #000
+          line-height 25px
+          padding
+        
+        p 
+          color #999999
+          line-height 25px
+      
+      .about-text-p2  
+        margin-top 60px
+        padding-left 30px
+        padding-right 30px
+
+        p 
+          color #999999
+          line-height 25px
+
+  @media(max-width 968px)
+    .skills
+      display block
+      width 600px
+      .col
+        .skills-content
+        .about-profile
+          text-align center
+          img
+            width 70%
+            height auto
+
+  @media(max-width 600px)
+    .skills
+      display block
+      width 400px
+      margin-right 40px
+      margin-left 40px
+      .col
+        .skills-content
+          text-align center
+        .about-profile
+            margin-top -20px
+  
+
+  @media(max-width 400px)
+    .skills
+      display block
+      margin-top 300px
+      width 320px
+      margin-right auto
+      margin-left auto
+      .col
+        .skills-content
+          text-align left
+        .about-profile
+            margin-top -20px
+    
+  @media(max-width 1270px)
+    .about
+      margin-right auto
+      margin-left auto
+      width 1000px
+
+  
+  @media(max-width 968px)
+    .about
+      display block
+      width 600px
+      margin-right auto
+      margin-left auto
+      .col
+        .about-text
+          padding-left 0px
+          padding-right 0px
+      .col
+        .about-text-p2
+          padding-left 0px
+          padding-right 0px
+
+  
+  @media(max-width 700px)
+    .about
+      margin-right 60px
+      margin-left 60px
+      width 450px
+  
+  @media(max-width 550px)
+    .about
+      margin-right 30px
+      margin-left 30px
+      width 380px
+      .col
+        .about-text
+          padding-left 0px
+          padding-right 0px
+      .col  
+        .about-text-p2
+          padding-left 0px
+          padding-right 0px
+  
+  @media(max-width 400px)
+    .about
+      margin-right 40px
+      margin-left 40px
+      width 320px
+      .col
+        .about-text
+          padding-left 0px
+          padding-right 0px
+      .col  
+        .about-text-p2
+          padding-left 0px
+          padding-right 0px
+  
+  @media(max-width 380px)
+    .about
+      margin-right 40px
+      margin-left 40px
+      width 300px
+
+  .cv
+    width 100vw
+    height 100%
+    display flex
+    z-index 999
+
+    .container
+      margin-left auto
+      margin-right auto
+      width 1120px
+      margin-right auto
+      margin-left auto
+      display flex
+      align-items center
+      flex-wrap wrap
+      
+      .cv-title
+        display flex
+        flex-wrap wrap
+        align-content flex-end
+
+        img
+          width 40px
+          height 40px
+          flex-wrap wrap
+          align-self center
+        p
+          flex-wrap wrap
+          align-self center
+          padding-left 20px
+          color #999999
+          
+          span
+            color #000000
+
+      .cv-information
+        margin-left auto
+        margin-right auto
+        width 1400px
+        display flex
+      
+        .col 
+          flex 1 1 33.33%
+          ul
+            padding-bottom 20px
+            padding-left 0px
+            li
+              list-style none
+              span
+                color #000
+                font-family 'Open sans'
+                font-weight 600
+              p   
+                margin 5px 0px
+                color #999999
+                fonty-family 'Open sans'
+  
+  @media(max-width 1270px)
+    .cv
+      .container
+        width 1000px
+        margin-right auto
+        margin-left auto
+        .cv-information
+          width 1000px
+          margin-right auto
+          margin-left auto
+  
+  @media(max-width 986px)
+    .cv
+      .container
+        width 600px
+        margin-right auto
+        margin-left auto
+        .cv-information
+          width 600px
+          margin-right auto
+          margin-left auto
+
+  @media(max-width 768px)
+    .cv
+      .container
+        .cv-information
+          display flex
+          width 600px
+
+  @media(max-width 768px)
+    .cv
+      .container
+        .cv-information
+          display flex
+          width 600px
+  
+  @media(max-width 550px)
+    .cv
+      .container
+        margin-left 40px
+        margin-right 40px
+        .cv-title
+          p
+            font-size 14px
+        .cv-information
+          display block
+          width 320px
+          margin 0px
+
+
+
+            

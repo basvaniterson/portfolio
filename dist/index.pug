@@ -1,0 +1,105 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Bas van Iterson
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='styles/globals.css')
+    link(rel='stylesheet', href='styles/main.css')
+    link(rel='icon' href='assets/images/favicon-logo.png' type='image/png') 
+  body
+    .left-background
+      img(src="assets/images/left-background.svg" target="_blank")
+    
+    .right-background
+      img(src="assets/images/right-background.svg")
+    header
+      .container
+          a(href="index.html")  
+            .brand
+              img(src="assets/images/logo.svg")
+          .title
+            p.name Bas van Iterson
+            span.txt-rotate(data-period="2000"  data-rotate='[" design"," development"]')
+          nav
+            ul
+              li 
+                a(href="projects.html") projects
+              li
+                a(href="about.html") about me
+ 
+      .overlay
+        .circle
+          img(src="assets/images/circle.svg")
+        .content
+          h1 Keep your thoughts going
+          span Hi there! - 
+          p  Een doel om enoverende digitale ervaringen te ontwerpen en te ontwikkelen in de wereld van het web. Creativiteit combineren met plezier en passie.
+          span - That's what keeps me going.
+
+      .socials-nav
+        ul
+          li
+            p Follow me
+          li
+            a(href="https://www.linkedin.com/in/bas-van-iterson-8b1709139/" target="_blank")
+              img.linkdin(src="assets/images/linkdin-logo.svg", alt="")
+          li
+            a(href="https://www.instagram.com/bas_vaniterson/" target="_blank")
+              img.instagram(src="assets/images/instagram-logo.svg", alt="")
+          li
+            a(href="https://www.facebook.com/bas.vaniterson.7" target="_blank")
+              img.facebook(src="assets/images/facebook-logo.svg", alt="")
+      
+      .projects-nav
+        ul
+          li
+            p Projects
+          li
+            button#scroll_down.scroll_down(type='button')
+              img(src='assets/images/projects-button.svg')
+
+    section.projects
+      .container
+        .project
+          .project-image
+            a(href="projects.html")
+              img(src="assets/images/project-image-1.jpg")
+          .project-text
+            .lower-text
+              span Applicatie / Concept
+              h2 X-RAY
+              p Een eindproject die ik voor mijn opleiding gedaan heb. X-RAY was een innovatief applicatie concept die ik moest voorbereiden als een pitch voor een fictieve opdrachtgever.
+              .button
+                a(href="projects.html") see project
+        
+    section.contact
+      .container
+        .contact-text
+          .info-text
+            h2 Contact
+            span information
+            .info
+              h2 E-mail
+              a(href="mailto:bas.vaniterson.development@gmail.com") bas.van.iterson.development@gmail.com
+                .button  
+                  img(src="assets/images/go to button.svg")
+            .info
+              h2 Telefoon
+              a(href="tel:0636537013") 06-36537013
+                .button  
+                  img(src="assets/images/go to button.svg")
+          .plain-text
+            span Wanna talk or meet? - 
+            p Bel of mail mij dan en ik neem zo snel mogelijk contact op.
+            span - Let’s get in touch.
+    
+    footer
+        .footer-text
+          .left-text
+            p Bas van Iterson | Design & Development
+          .right-text
+            p Portfolio Website | Copyright 2018
+
+    script(src='scripts/main.js')
